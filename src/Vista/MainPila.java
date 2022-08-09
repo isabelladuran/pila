@@ -29,13 +29,14 @@ public class MainPila {
         pilaP.apilar(new Productos("Manzanas", 3 , 3500));
         pilaP.apilar(new Productos("Fresas", 8 , 6000));
         
-        System.out.println("Pila: \n" + pilaP.toString());
-        System.out.println("Pila Duplicada: \n" + OperacionesPila.pilaDuplicada(pilaP));
+        System.out.println("Pila Original: \n" + pilaP.toString());
+        //System.out.println("Pila Duplicada: \n" + OperacionesPila.pilaDuplicada(pilaP));
         
-        pilaP.desapilar();
-        System.out.println("Pila \n" + pilaP.toString());
+        //pilaP.desapilar();
+        //System.out.println("Pila: \n" + pilaP.toString());
         
-        
+        Pila<Productos> pd = OperacionesPila.pilaDuplicada(pilaP);
+        System.out.println("Pila Duplicada: \n"+ pd.toString());
 
     }
     
